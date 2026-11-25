@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trabajo Practico</title>
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+
+  <!-- Barra de progreso de lectura -->
+  <div class="progreso" id="progreso"></div>
+
+  <!-- ============ CABECERA (se repite en todas las páginas) ============ -->
+  <header class="cabecera">
+    <div class="cabecera-fila">
+      <a href="#bienvenida" class="logotipo" data-ruta>Trabajo practico<span>.</span></a>
+      <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú" aria-expanded="false" aria-controls="navegacion">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navegacion" id="navegacion">
+        <a href="#bienvenida" data-ruta>Inicio</a>
+        <a href="#primero" data-ruta>Tema: "Habilidades blandas"</a>
+        <a href="#segundo" data-ruta>Tema: "Base de datos" </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="principal">
+
+    <!-- ================= PÁGINA 1: BIENVENIDA — EMPIEZA ================= -->
+    <section class="pantalla" id="bienvenida" data-titulo="Inicio">
+      <div class="heroe">
+        <h1>Temas a plantear</h1><br> <p>Habilidades blandas y Base de datos:
+ </p>
+        <a href="#primero" class="boton" data-ruta>Empezar con el primer tema</a>
+      </div>
+
+      <div class="rejilla">
+        <a href="#primero" class="tema-tarjeta" data-ruta>
+          <span class="tema-icono" aria-hidden="true">📘</span>
+          <h2>Primer tema</h2>
+          <p>Habilidades blandas: Conjunto de habilidades interpersonales y de comunicación que facilitan el trabajo en equipo y la adaptación.</p>
+          <small>Lectura: 5 min</small>
+        </a>
+        <a href="#segundo" class="tema-tarjeta" data-ruta>
+          <span class="tema-icono" aria-hidden="true">📗</span>
+          <h2>Segundo tema</h2>
+          <p>Base de datos: Permite organizar y administrar información de forma estructurada para consultarla, modificarla y usarla con rapidez y eficiencia.</p>
+          <small>Lectura: 8 min</small>
+        </a>
+      </div>
+    </section>
+    <!-- ================= PÁGINA 1: BIENVENIDA — TERMINA ================= -->
+
+
+    <!-- ================= PÁGINA 2: PRIMER TEMA — EMPIEZA ================= -->
+    <section class="pantalla" id="primero" data-titulo="Primer tema" hidden>
+      <header class="articulo-cabeza">
+        <h1> Habilidades blandas</h1>
+        <p class="resumen">Capacidades personales y sociales que mejoran la relación con los demás, el trabajo en equipo y la comunicación.
+Nos ayudan a resolver problemas y a adaptarnos a distintos contextos tanto en lo personal como en lo laboral.</p>
+      </header>
+
+      <div class="articulo-cuerpo">
+        <!-- El índice se genera solo con los <h2> de esta página -->
+        <aside class="indice" aria-label="Índice de la página"></aside>
+
+        <article class="texto">
+          <h2>Introducción</h2>
+          <p>Las habilidades blandas o interpersonales son clave tanto en la vida personal como en el ámbito laboral. A diferencia de las habilidades técnicas, ligadas a conocimientos específicos, dependen de cómo actuamos, nos comunicamos y nos vinculamos con otros. </p>
+          <p>Hoy las empresas las valoran porque favorecen el trabajo en equipo, la resolución de conflictos y la adaptación.</p>
+
+          <h2>Conceptos principales</h2>
+          <p>Capacidades personales y sociales de comunicación, vínculo y actitud que se desarrollan con la práctica e impulsan el desempeño individual y colectivo.</p>
+          <div class="aviso"><strong>Dato útil:</strong> A diferencia de las habilidades técnicas, se entrenan con la práctica y la experiencia cotidiana, no solo con teoría.</div>
+          <ul>
+            <li>En un equipo, asumir responsabilidades y comunicarse bien para coordinar esfuerzos hacia una meta común.</li>
+            <li>Ante un conflicto, identificar el problema, escuchar distintas posturas y buscar un acuerdo.</li>
+            <li>Ante cambios de tareas, roles o herramientas, adaptarse sin perder de vista los objetivos.</li>
+          </ul>
+
+          <h2>Desarrollo</h2>
+          <p>Las habilidades blandas se desarrollan y mejoran mediante la práctica y la experiencia. En el trabajo en equipo exigen asumir responsabilidades, comunicarse bien y coordinar esfuerzos para alcanzar un objetivo común. Ante un conflicto, requieren reconocer el problema, escuchar distintas posturas y buscar un acuerdo. Con adaptabilidad, permiten afrontar cambios en tareas, roles o herramientas sin perder de vista las metas.</p>
+          <p>Estas capacidades se relacionan entre sí y elevan tanto el rendimiento individual como el colectivo.</p>
+
+          <h2>Conclusión</h2>
+          <p>Son fundamentales para desenvolvernos en la vida diaria al ayudarnos a comunicarnos, colaborar, resolver problemas y adaptarnos a los cambios. Desarrollarlas impulsa nuestro crecimiento personal y nos prepara para futuros estudios y oportunidades laborales.</p>
+
+          <div class="pasar">
+            <a href="#bienvenida" data-ruta>← Inicio</a>
+            <a href="#segundo" data-ruta>Siguiente: Segundo tema →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ================= PÁGINA 2: PRIMER TEMA — TERMINA ================= -->
+
+
+    <!-- ================= PÁGINA 3: SEGUNDO TEMA — EMPIEZA ================= -->
+    <section class="pantalla" id="segundo" data-titulo="Segundo tema" hidden>
+      <header class="articulo-cabeza">
+        <h1>Base de datos</h1>
+        <p class="resumen">Almacena, organiza y administra información de forma ordenada para facilitar su consulta, modificación y uso.
+Permite guardar grandes volúmenes de datos estructurados y acceder a ellos de manera rápida y eficiente.</p>
+      </header>
+
+      <div class="articulo-cuerpo">
+        <aside class="indice" aria-label="Índice de la página"></aside>
+
+        <article class="texto">
+          <h2>Introducción</h2>
+          <p>La información es central en la informática actual. Escuelas, comercios y empresas manejan grandes volúmenes de datos —como alumnos, productos o clientes— y necesitan bases de datos para guardarlos de forma estructurada y consultarlos cuando haga falta.</p>
+
+          <h2>Comparación de datos</h2>
+          <p>Diferencias clave entre la estructura horizontal de un registro, la estructura vertical de un campo y el carácter único de una clave primaria.</p>
+          <div class="tabla-caja">
+            <table class="tabla">
+              <tr><th>Concepto</th><th>Cantidad</th><th>Nota</th></tr>
+              <tr><td>Registro — Fila completa con todos los datos de un elemento (por ejemplo, un alumno).</td><td>1 por cada elemento guardado en la tabla.</td><td>Reúne los valores de todos los campos correspondientes a ese mismo elemento.</td></tr>
+              <tr><td>Campo — Columna que representa una característica específica de la información (por ejemplo, nombre, curso o DNI).</td><td>1 por cada atributo o característica definida en la tabla.</td><td>Define el tipo de dato que se carga en cada fila dentro de esa columna.</td></tr>
+              <tr><td>Clave primaria — Campo que identifica de manera única cada registro dentro de la tabla.</td><td>1 identificador único por cada registro.</td><td>Evita duplicados y permite ubicar un registro exacto sin ambigüedades (como un legajo o número de identificación).</td></tr>
+            </table>
+          </div>
+
+          <h2>Desarrollo</h2>
+          <p>Las bases de datos se aplican en distintos ámbitos para manejar información de forma ordenada y eficiente. En una escuela, por ejemplo, permiten guardar nombres, apellidos, cursos, calificaciones y DNI de los estudiantes: cada alumno es un registro y cada dato específico (como el nombre o el curso) es un campo. Gracias a esta estructura, un docente puede buscar rápidamente a un alumno por su número de identificación para consultar sus datos, agregar nueva información, actualizar registros existentes o eliminarlos.</p>
+          <div class="aviso"><strong>Recordá:</strong> La clave primaria no puede repetirse entre distintos registros, ya que es el dato único que garantiza encontrar exactamente la información buscada sin confusiones.</div>
+
+          <h2>Conclusión</h2>
+          <p>Las bases de datos son herramientas esenciales en la informática para almacenar y administrar grandes volúmenes de información de manera organizada. Facilitan el acceso rápido a los datos, evitan el desorden y agilizan distintas operaciones, por lo que resultan clave en escuelas, empresas, hospitales y muchas otras organizaciones.</p>
+
+          <div class="pasar">
+            <a href="#primero" data-ruta>← Primer tema</a>
+            <a href="#bienvenida" data-ruta>Inicio →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ================= PÁGINA 3: SEGUNDO TEMA — TERMINA ================= -->
+
+  </main>
+
+  <button class="subir" id="subir" aria-label="Volver arriba">↑</button>
+
+  <!-- ============ PIE CELESTE (se repite en todas las páginas) ============ -->
+  <footer class="pie-celeste">
+    <div class="pie-contenido">
+      <div>
+        <h3>Thun Thun Sahur</h3>
+        <p>Pagina creada con fines educativos, asi apruebo la secundaria, aprobame Nicooo</p>
+      </div>
+      <div>
+        <h3>Explorar</h3>
+        <a href="#bienvenida" data-ruta>Inicio</a>
+        <a href="#primero" data-ruta>Primer tema</a>
+        <a href="#segundo" data-ruta>Segundo tema</a>
+      </div>
+      
+    </div>
+    <p class="pie-legal">
+  Trabajo práctico de Milton Aranda<br>
+  Materias: medios digitales y sistemas de información<br>
+  Temas: Base de datos y Habilidades blandas<br>
+  Profe: Nicolás Casals
+</p>
+  </footer>
+
+  <script src="portal.js"></script>
+</body>
+</html>
